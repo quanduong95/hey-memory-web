@@ -8,7 +8,16 @@
     font-weight: 400;
 
     --text-primary: #000000;
-    --text-secondary: #565656;
+    --text-secondary: #696969;
+
+    --bg-primary: rgb(31, 92, 150);
+    --bg-secondary: rgb(190, 214, 236);
+
+    --btn-width: 280px;
+    --btn-height: 48px;
+
+    --input-width: 280px;
+    --input-height: 48px;
 
     color-scheme: light dark;
 

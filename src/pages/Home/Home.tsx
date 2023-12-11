@@ -1,9 +1,11 @@
-import { Navbar } from '../../components/Navbar/Navbar';
+import { DefaultLayout } from '../../layouts/DefaultLayout/DefaultLayout';
 
 export const Home = () => {
   return (
     <section>
-      <Navbar />
+      <DefaultLayout>
+        <main className='min-h-[100vh]'></main>
+      </DefaultLayout>
     </section>
   );
 };
