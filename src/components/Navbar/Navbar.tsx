@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
-const navItems = ['ITEM', 'ITEM', 'ITEM', 'ITEM'];
+const navItems = ['ITEM1', 'ITEM2', 'ITEM3', 'ITEM4'];
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -16,7 +16,7 @@ export const Navbar = () => {
             return (
               <li
                 key={index}
-                className='mx-2 lg:mx-0 p-2    text-center cursor-pointer  '
+                className='mx-2 lg:mx-0 p-2 text-[var(--text-primary)]   text-center cursor-pointer  '
               >
                 {item}
               </li>
