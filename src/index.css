@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    --text-primary: #000000;
+    --text-secondary: #565656;
+    --text-highlight: #0096c7;
+    --text-banner: #fffff0;
+    --text-bold: #03045e;
+    --bg-button: #90e0ef;
+    --bg-primary: #dcecf0;
+    --bg-hover: #c6e9f0;
+    --max-width: 1140px;
+    -o-animation-delay: 1s;
+
+    color-scheme: light dark;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
