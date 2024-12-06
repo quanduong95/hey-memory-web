@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
-const navItems = ['ITEM1', 'ITEM2', 'ITEM3', 'ITEM4'];
+const navItems = ['home', 'feature', 'pricing'];
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -10,13 +10,13 @@ export const Navbar = () => {
   };
   return (
     <main>
-      <nav className='flex relative items-center justify-end w-full  min-h-[60px] max-w-[var(--max-width)] m-auto '>
+      <nav className='flex relative items-center justify-end w-full  min-h-[60px] max-w-[var(--max-width)] m-auto  bg-white'>
         <ul className='hidden sm:flex items-center justify-between sm:w-[40%] md:w-[30%] lg:w-[26%]  mx-20 '>
           {navItems.map((item, index) => {
             return (
               <li
                 key={index}
-                className='mx-2 lg:mx-0 p-2 text-[var(--text-primary)]   text-center cursor-pointer  '
+                className='mx-2 lg:mx-0 p-2 text-[--text-primary]   text-center cursor-pointer  '
               >
                 {item}
               </li>
@@ -26,15 +26,15 @@ export const Navbar = () => {
         <div className={nav ? 'hidden' : 'my-1  z-10'}>
           <FaBars
             size={30}
-            className='sm:hidden mx-4 cursor-pointer z-10 '
+            className='sm:hidden mx-4 cursor-pointer z-10 text-black '
             onClick={() => handleNav()}
           />
         </div>
         <div
           className={
             nav
-              ? 'absolute overflow-y-hidden sm:hidden ease-in duration-300 text-gray-300 left-0 top-0 h-screen w-full bg-black/90 flex flex-col '
-              : 'absolute top-0 h-screen left-[-100%] ease-in duration-200'
+              ? 'absolute overflow-y-hidden sm:hidden ease-in duration-500 text-gray-300 left-0 top-0 h-screen w-full bg-black/90 flex flex-col '
+              : 'absolute top-0 h-screen left-[-100%] ease-in duration-500'
           }
         >
           <ul className='flex flex-col items-center justify-center h-screen'>
@@ -42,7 +42,7 @@ export const Navbar = () => {
               return (
                 <li
                   key={index}
-                  className='py-8 text-xl text-white tracking-widest hover:text-white/50  '
+                  className='py-8 text-xl text-white tracking-widest hover:text-white/50 uppercase '
                 >
                   <a
                     href='#contact'
@@ -54,7 +54,7 @@ export const Navbar = () => {
               );
             })}
           </ul>
-          <div className='absolute right-[2.2%] top-[5%] text-white cursor-pointer'>
+          <div className='absolute right-[2.2%] top-[2%] text-white cursor-pointer'>
             <IoMdClose
               onClick={() => handleNav()}
               size={40}

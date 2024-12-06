@@ -1,10 +1,17 @@
+import { FeaturesSection } from '../../components/FeaturesSection/FeaturesSection';
+import { HeroSection } from '../../components/HeroSection/HeroSection';
+import { IntroSection } from '../../components/IntroSection/IntroSection';
 import { DefaultLayout } from '../../layouts/DefaultLayout/DefaultLayout';
 
 export const Home = () => {
   return (
     <section>
       <DefaultLayout>
-        <main className='min-h-[100vh]'></main>
+        <main className=' bg-white px-6'>
+          <HeroSection />
+          <IntroSection />
+          <FeaturesSection />
+        </main>
       </DefaultLayout>
     </section>
   );

@@ -7,11 +7,12 @@
     line-height: 1.5;
     font-weight: 400;
 
-    --text-primary: #000000;
+    --text-primary: #181818;
     --text-secondary: #696969;
+    --black-primary: #000000;
+    --white-primary: #fff;
 
-    --bg-primary: rgb(31, 92, 150);
-    --bg-secondary: rgb(190, 214, 236);
+    --bg-primary: #fff;
 
     --btn-width: 280px;
     --btn-height: 48px;
@@ -25,5 +26,8 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    color: var(--text-primary);
   }
 }
